@@ -1,0 +1,84 @@
+<html>
+<head>
+  <style>
+    label
+    {
+     color:white; 
+    }
+	body {
+	background-image: url('101015.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	}
+	bg
+	{
+	filter:blur(2px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+	height: 100%; 
+	}
+	.blur {
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(13px);
+  position: absolute;
+  height: 300px;
+  top: -50px;
+  left: -50px;
+  right: -50px;
+  bottom: -50px;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="register.js"></script>
+<title> login</title>
+
+</head>
+<body  background-image="101015">
+<br><br>
+<center><h3 style="color:white"><label> Registration form </center></label></h3><br>
+<br><br><br>
+
+<div  class="container" style="border: 4px" color="black" style="filter:blur(2px)">
+  <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4" style="border: 2px solid;border-radius:5%"><br<br><br>
+        	<div class="form-group">
+     <form name="registration" method="POST" onsubmit="return SubmitFirstResponse()">
+      <center><img src="user.png"></center>
+      <br>
+    <label for="name">Name:</label>
+    <input type="text" class="form-control tb" id="name" name="name" style="width:240px"><br>
+
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control fb" id="email"  name="email" style="width:240px" ><br>
+
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control tb" id="pwd1"  name="pwd1" style="width:240px"><br>
+
+    <label for="pwd">Re-enter Password:</label>
+    <div style="display:flex">          
+    <center><input type="password" class="form-control tb" id="pwd2" name="pwd2" style="width:240px"></center><br><br>
+    <span style = "padding-center: 10px;color: red" id="errorspan"></span>
+    </div><br>
+    <label for="phonenumber">Phone number:</label>
+    <input type="number" class="form-control tb" id="phonenumber" name="phonenumber" style="width:240px"><br>
+    <label><input type="checkbox"> Remember me</label>
+    <br>
+     <button class="btn btn-primary btn-md" >submit</button>
+     <br><br>
+     </form>
+  </div>
+  </div>
+  </div>
+  <script src="jquery.js"></script>
+  <script src="register.js"></script>
+      <script src="jquery.validate.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+<title>intern</title>
+
+<script>
+        function loadDoc() {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              document.getElementById("div1").innerHTML =
+              this.responseText;
+            }
+          };
+          xhttp.open("GET", "microsoft.html", true);
+          xhttp.send();
+        }
+
+function loadDoc2() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("div2").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "microsoft.txt", true);
+  xhttp.send();
+}
+</script>
+
+</head>
+<body >
+    <div id="header" style="height:176px;border:black">
+    </div>
+
+    <div  class="container">
+        <div class="row">
+    <div  id=div1 onclick="loadDoc()" class=col-md-6>
+        <img  class="img-thumbnail"   alt="cinque terre" src="google.png">
+        </div>
+
+      <div  id=div2 onclick="loadDoc2()" class= col-md-6>
+          <img  class="img-thumbnail"   alt="cinque terre" src="google.png">
+
+      </div>
+        </div>
+        </div>
+        
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+Round 1:
+
+The first round was an online Coding/Programming test conducted on  mettl.com/
+Many students across the country participated in this round. 
+There were 3 questions of varying difficulty levels. 
+Candidates who solved  3 problems or 2 problems with 3rd one partially solved were directly called for the onsite Interview.
+ Few Questions were based on simple array manipulation and String manipulation and other on Dynamic Programming.
